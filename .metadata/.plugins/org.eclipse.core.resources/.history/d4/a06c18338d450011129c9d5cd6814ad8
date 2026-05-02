@@ -1,0 +1,50 @@
+package com.generation.lessons;
+
+import java.util.Scanner;
+
+public class esempio1 {
+
+	public static void main(String[] args) {
+
+		int sceltan;
+		String numero;
+		String testo = "Inserisci un numero da 1 a 7";
+
+		Scanner Scanner = new Scanner(System.in);
+
+		System.out.println(testo);
+		numero = Scanner.nextLine();
+		sceltan = Integer.parseInt(numero);
+
+		while (!(sceltan > 0 && sceltan < 7)) {
+			System.out.print("Numero non valido.\n" + testo);
+			numero = Scanner.nextLine();
+			sceltan = Integer.parseInt(numero);
+		}
+
+		switch (sceltan) {
+		case 1:
+			System.out.println("Lunedì");
+			break;
+		case 2:
+			System.out.println("Martedì");
+			break;
+		case 3:
+			System.out.println("Mercoledì");
+			break;
+		case 4:
+			System.out.println("Giovedì");
+			break;
+		case 5:
+			System.out.println("Venerdì");
+			break;
+		case 6:
+			System.out.println("Sabato");
+			break;
+		case 7:
+			System.out.println("Domenica");
+		}
+	}
+
+//		Scanner.close();
+}

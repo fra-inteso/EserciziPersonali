@@ -1,0 +1,47 @@
+package com.generation.lessons;
+
+import java.util.Scanner;
+
+public class Esercizio1Claude {
+
+	public static void main(String[] args) {
+		
+		double orario;
+		String giorno = "";
+		String messaggio;
+		
+		Scanner Scanner = new Scanner (System.in);
+		
+		System.out.println("Benvenuti da GardenGreen, indica il giorno di visita");
+		giorno = Scanner.nextLine();
+		
+		
+		
+		if (!(giorno.equalsIgnoreCase("lunedi") || giorno.equalsIgnoreCase("martedi") || giorno.equalsIgnoreCase("mercoledi") || 
+			giorno.equalsIgnoreCase("giovedi") || giorno.equalsIgnoreCase("venerdi") || giorno.equalsIgnoreCase("sabato") || giorno.equalsIgnoreCase("domenica")))
+		{
+		System.out.println("Il giorno inserito non è valido coglione");
+		}
+		else
+			System.out.println("Inserisci l'orario di visita");
+		    orario = Scanner.nextDouble();
+		    
+		    if(!(orario > 0 && orario < 23))
+		    {
+		    	System.out.println("Orario non valido deficiente");
+		    }
+		    else
+		    {
+		    	if (giorno == ("lunedi") && orario >= 9 || orario <=13 || orario >= 15 || orario <= 19)
+		    	{
+		    		
+		    	}
+		    }
+		
+		
+		
+		
+		Scanner.close();
+	}
+
+}

@@ -15,7 +15,7 @@ public class Esercizio1Claude {
 		
 		//per scrivere velocemente System.out.println ==>> scrivere syso e poi ctrl + spazio;
 		
-		System.out.println("Benvenuti da GardenGreen, indica il giorno di visita");
+		System.out.println("Benvenuti da GreenGarden, indica il giorno di visita");
 		giorno = Scanner.nextLine();
 		
 		
