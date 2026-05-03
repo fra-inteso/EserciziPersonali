@@ -1,0 +1,40 @@
+package personal.exercise;
+
+import java.util.Scanner;
+
+public class Esercizio2 {
+
+	public static void main(String[] args) {
+		
+		int pinCorretto = 1234;
+		int pinUtente;
+		String definire;
+		int incremento;
+		
+		Scanner Scanner = new Scanner(System.in);
+		
+		
+//		System.out.println("Inserisci il tuo pin");
+//		pinUtente = Integer.parseInt(Scanner.nextLine());
+		
+		do
+		{
+			System.out.println("Inserisci il tuo pin");
+			pinUtente = Integer.parseInt(Scanner.nextLine());
+		}
+		while(pinUtente == pinCorretto);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
